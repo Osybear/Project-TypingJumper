@@ -48,16 +48,16 @@ public class Enemy : MonoBehaviour {
 
         if(collision.transform.name == "Player")
         {
-            if(collision.transform.position.y > transform.position.y)
+            if(collision.transform.position.y > transform.position.y && (collision.transform.position.y - transform.position.y) > .5)
             {
                 Destroy(gameObject);
             }
             else
             {
-                Transform cam = collision.transform.GetComponent<PlayerController>().m_PlayerRB.transform.GetChild(0);
+                Transform cam = collision.transform.GetChild(0).gameObject.transform;
                 cam.GetComponent<Animator>().enabled = false;
                 cam.SetParent(null, true);
-                collision.transform.GetComponent<PlayerController>().m_PlayerRB.GetComponent<BoxCollider2D>().enabled = false;
+                collision.transform.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }

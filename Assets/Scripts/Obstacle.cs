@@ -8,10 +8,10 @@ public class Obstacle : MonoBehaviour {
     {
         if(collision.transform.name == "Player")
         {
-            Transform cam = collision.transform.GetComponent<PlayerController>().m_PlayerRB.transform.GetChild(0);
+            Transform cam = collision.transform.GetChild(0).gameObject.transform;
             cam.GetComponent<Animator>().enabled = false;
             cam.SetParent(null, true);
-            collision.transform.GetComponent<PlayerController>().m_PlayerRB.GetComponent<BoxCollider2D>().enabled = false;
+            collision.transform.GetComponent<BoxCollider2D>().enabled = false;
         }   
     }
 }

@@ -7,6 +7,7 @@ public class EndTrigger : MonoBehaviour {
 
     public GameObject m_YouWin;
     public PlayerController m_PlayerController;
+    public string NextLevelName;
 
     private void Awake()
     {
@@ -21,6 +22,6 @@ public class EndTrigger : MonoBehaviour {
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(NextLevelName);
     }
 }
