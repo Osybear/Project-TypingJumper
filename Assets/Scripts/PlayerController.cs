@@ -62,6 +62,9 @@ public class PlayerController : MonoBehaviour
 
         if (text == "restart")
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        if (text == "exit")
+            SceneManager.LoadScene("menu");
     }
 
     private void MoveLeft()

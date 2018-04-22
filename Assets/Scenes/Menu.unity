@@ -999,9 +999,9 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 100
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 121
+    m_BestFit: 1
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1020,9 +1020,13 @@ MonoBehaviour:
 
     "move right"
 
+    "stop" - stops movement
+
     "restart" - restart level
 
-    "stop" - stops movement'
+    "exit" - go back to main menu
+
+    Space Bar - skips start transition'
 --- !u!222 &86074733
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1401,7 +1405,7 @@ RectTransform:
   - {fileID: 24747839}
   - {fileID: 749361800}
   m_Father: {fileID: 747317518}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8298,9 +8302,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1504332383}
-  - {fileID: 898655484}
   - {fileID: 117464161}
   - {fileID: 1282691347}
+  - {fileID: 898655484}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9974,7 +9978,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 747317518}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &898655485
 MonoBehaviour:
@@ -13386,7 +13390,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Controlls
+  m_Text: Controls
 --- !u!222 &1233092807
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14130,7 +14134,7 @@ RectTransform:
   - {fileID: 1910038908}
   - {fileID: 332728871}
   m_Father: {fileID: 747317518}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
