@@ -1016,15 +1016,17 @@ MonoBehaviour:
 
     "jump right"
 
-    "move left"
+    "left"
 
-    "move right"
+    "right"
 
     "stop" - stops movement
 
     "restart" - restart level
 
     "exit" - go back to main menu
+
+    "help" - open options
 
     Space Bar - skips start transition'
 --- !u!222 &86074733
